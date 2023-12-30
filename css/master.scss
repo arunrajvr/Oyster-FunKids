@@ -281,6 +281,12 @@ body {
                 right: 0;
                 bottom: 0;
             }
+            .main-image {
+                position: relative;
+                z-index: 1;
+                top: 20px;
+                left: 20px;
+            }
             .layer-2 {
                 animation: rotate 60s infinite linear;
             }
@@ -288,17 +294,49 @@ body {
                 transform: rotate(-30deg);
             }
         }
-        &::before {
+        .sun-vector {
             position: absolute;
             top: -20px;
             right: -20px;
-            content: url('../images/sun-1.svg');
+            width: 76px;
+            height: 98px;
+            img {
+                animation: pendulum 10s infinite linear;
+            }
+            .star-1 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                animation: rotate 60s infinite linear;
+            }
         }
-        &::after {
+        .star-3-banner {
+            position: absolute;
+            top: 40%;
+            right: -15px;
+            animation: rotate 60s infinite linear;
+        }
+        .banner-star {
             position: absolute;
             bottom: 0;
             left: -100px;
-            content: url('../images/star-1.svg');
+            width: 110px;
+            height: 110px;
+            img {
+                animation: pendulum 10s infinite linear;
+            }
+            .star-1-banner {
+                position: absolute;
+                top: 0;
+                right: 20px;
+                animation: rotate 60s infinite linear;
+            }
+            .star-2-banner {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                animation: rotate 60s infinite linear;
+            }
         }
     }
     .cloud-border {
@@ -914,6 +952,10 @@ body {
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+                    margin-bottom: 0;
+                    img {
+                        border: none;
+                    }
                 }
             }
             .title {
@@ -935,6 +977,11 @@ body {
                     font-size: 14px;
                     font-style: normal;
                     line-height: normal;
+                }
+            }
+            &:hover {
+                .icon-holder {
+                    margin-top: -3px;
                 }
             }
         }
@@ -1019,6 +1066,13 @@ footer {
         .image-holder {
             .social-link {
                 margin-right: 30px;
+                a {
+                    position: relative;
+                    bottom: 0px;
+                    &:hover {
+                        bottom: 3px;
+                    }
+                }
                 &:last-child {
                     margin-right: 0;
                 }

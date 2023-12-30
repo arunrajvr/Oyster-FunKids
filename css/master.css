@@ -261,23 +261,61 @@ body {
   right: 0;
   bottom: 0;
 }
+.banner .image-holder .banner-image .main-image {
+  position: relative;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+}
 .banner .image-holder .banner-image .layer-2 {
   animation: rotate 60s infinite linear;
 }
 .banner .image-holder .banner-image .layer-1 {
   transform: rotate(-30deg);
 }
-.banner .image-holder::before {
+.banner .image-holder .sun-vector {
   position: absolute;
   top: -20px;
   right: -20px;
-  content: url("../images/sun-1.svg");
+  width: 76px;
+  height: 98px;
 }
-.banner .image-holder::after {
+.banner .image-holder .sun-vector img {
+  animation: pendulum 10s infinite linear;
+}
+.banner .image-holder .sun-vector .star-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 60s infinite linear;
+}
+.banner .image-holder .star-3-banner {
+  position: absolute;
+  top: 40%;
+  right: -15px;
+  animation: rotate 60s infinite linear;
+}
+.banner .image-holder .banner-star {
   position: absolute;
   bottom: 0;
   left: -100px;
-  content: url("../images/star-1.svg");
+  width: 110px;
+  height: 110px;
+}
+.banner .image-holder .banner-star img {
+  animation: pendulum 10s infinite linear;
+}
+.banner .image-holder .banner-star .star-1-banner {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  animation: rotate 60s infinite linear;
+}
+.banner .image-holder .banner-star .star-2-banner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: rotate 60s infinite linear;
 }
 .banner .cloud-border {
   position: relative;
@@ -849,6 +887,10 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  margin-bottom: 0;
+}
+.testimonials .kids-testimonial-holder .card .image-holder .icon-holder img {
+  border: none;
 }
 .testimonials .kids-testimonial-holder .card .title {
   margin-bottom: 0;
@@ -870,6 +912,9 @@ body {
   font-size: 14px;
   font-style: normal;
   line-height: normal;
+}
+.testimonials .kids-testimonial-holder .card:hover .icon-holder {
+  margin-top: -3px;
 }
 
 .parent {
@@ -946,6 +991,13 @@ footer .image-text .content-holder p {
 }
 footer .image-text .image-holder .social-link {
   margin-right: 30px;
+}
+footer .image-text .image-holder .social-link a {
+  position: relative;
+  bottom: 0px;
+}
+footer .image-text .image-holder .social-link a:hover {
+  bottom: 3px;
 }
 footer .image-text .image-holder .social-link:last-child {
   margin-right: 0;

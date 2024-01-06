@@ -218,6 +218,12 @@ body {
     }
 }
 
+.image-holder-full {
+    img {
+        width: 100%;
+    }
+}
+
 .content-holder {
     h1,
     h2 {
@@ -284,8 +290,8 @@ body {
             .main-image {
                 position: relative;
                 z-index: 1;
-                top: 20px;
-                left: 20px;
+                top: 35px;
+                left: 35px;
             }
             .layer-2 {
                 animation: rotate 60s infinite linear;
@@ -482,6 +488,7 @@ body {
         padding: 25px 16px;
         background: #CDF797;
         position: relative;
+        height: 143px;
         h3 {
             color: #252525;
             font-size: 18px;

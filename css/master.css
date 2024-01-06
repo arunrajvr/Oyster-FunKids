@@ -197,6 +197,10 @@ body {
   margin-left: 10px;
 }
 
+.image-holder-full img {
+  width: 100%;
+}
+
 .content-holder h1,
 .content-holder h2 {
   background: linear-gradient(90deg, #C1489B 0.11%, #7654A3 17.4%, #8CC63F 33.37%, #EF4036 45.74%, #F68A1E 55.96%, #FCC515 74.17%);
@@ -264,8 +268,8 @@ body {
 .banner .image-holder .banner-image .main-image {
   position: relative;
   z-index: 1;
-  top: 20px;
-  left: 20px;
+  top: 35px;
+  left: 35px;
 }
 .banner .image-holder .banner-image .layer-2 {
   animation: rotate 60s infinite linear;
@@ -447,6 +451,7 @@ body {
   padding: 25px 16px;
   background: #CDF797;
   position: relative;
+  height: 143px;
 }
 .card-holder .content h3 {
   color: #252525;

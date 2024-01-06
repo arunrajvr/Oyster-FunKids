@@ -456,6 +456,7 @@ body {
 }
 
 .owl-dots {
+    display: block !important;
     position: absolute;
     left: 0;
     right: 0;
@@ -613,9 +614,6 @@ body {
             .content {
                 background-color: #FFFB6E;
             }
-        }
-        .owl-dots {
-            display: block;
         }
     }
     .btn-holder {

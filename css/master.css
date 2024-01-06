@@ -420,6 +420,7 @@ body {
 }
 
 .owl-dots {
+  display: block !important;
   position: absolute;
   left: 0;
   right: 0;
@@ -569,9 +570,6 @@ body {
 }
 .books-section .carousal-holder .card-holder .content {
   background-color: #FFFB6E;
-}
-.books-section .carousal-holder .owl-dots {
-  display: block;
 }
 .books-section .btn-holder {
   margin-top: 80px;
